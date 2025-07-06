@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Predicting Optimal Fertilizers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: #1e1e2f;
+      color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      background: #2c2c3c;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #63b3ed;
+    }
+
+    .subheading {
+      font-size: 1rem;
+      color: #a0aec0;
+      margin-top: -10px;
+      margin-bottom: 30px;
+    }
+
+    .kaggle-logo {
+      width: 48px;
+      height: 48px;
+    }
+
+    h3 {
+      margin-top: 30px;
+      color: #e2e8f0;
+    }
+
+    p, li {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #90cdf4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .download-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #4299e1;
+      color: #ffffff;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .download-button:hover {
+      background-color: #3182ce;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Predicting Optimal Fertilizers</h1>
+      <img class="kaggle-logo" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" alt="Kaggle Logo">
+    </div>
+    <div class="subheading">Playground Series - Season 5, Episode 6</div>
+
+    <p>
+      The Playground Series is a collection of beginner-friendly Kaggle competitions designed to help individuals practice and enhance their data science and machine learning skills. These competitions feature synthetic, tabular datasets that are ideal for learning and experimentation.
+    </p>
+
+    <p>
+      I have participated in the sixth competition of this series, where the objective is to select the best fertilizer for different weather, soil conditions and crops. This is a multi‑class classification challenge with several fertilizer categories to predict. This competition was great in order to learn about applying classical ML methods on a large-scale, well-defined problem. Even though the data was synthetic but it was realistic, mimicking agriculture scenarios to enhance domain understanding. The community was incredibly supportive, generously sharing their insights and results, which helped me improve my models significantly.
+    </p>
+
+    <p>
+      <strong>Final Result:</strong> 82 out of 2648.<br>
+      <strong>Public Score:</strong> 0.38304<br>
+      <strong>Private Score:</strong> 0.38308
+    </p>
+
+    <p>
+      🔗 <strong>Final submission:</strong> <a href="https://www.kaggle.com/code/kushaldevanabanda/test-20" target="_blank">View on Kaggle</a><br>
+      📘 <strong>Competition details:</strong> <a href="https://www.kaggle.com/competitions/playground-series-s5e6/overview" target="_blank">See challenge page</a>
+    </p>
+
+    <h3>🧠 My Approach</h3>
+    <p>
+      To tackle this multi-class classification challenge, I experimented with multiple machine learning models like XGBoost and other tree-based methods. I created multiple results by changing the parameters. After evaluating their performance, I combined the predictions from my best models with selected high-performing public solutions shared by the Kaggle community.
+    </p>
+
+    <p>
+      Using an ensemble strategy, I aggregated the outputs to create a robust final submission. This blend of personal experimentation and community-driven insights significantly boosted the performance of my final submitted solution. I would like to thank the Kaggle community for all their support and for helping me achieve a higher result.
+    </p>
+
+    <h3>❌ Missed Opportunities</h3>
+    <ul>
+      <li>Did not experiment with deep learning approaches such as kNN</li>
+      <li>Skipped automated feature selection and advanced augmentation</li>
+    </ul>
+
+    <h3>⚠️ What Didn't Work</h3>
+    <ul>
+      <li>Combining nitrogen, potassium, and phosphorus or interaction features reduced accuracy</li>
+      <li>Single-script stacking approach underperformed compared to separate model training</li>
+    </ul>
+
+    <h3>✅ Key Takeaways</h3>
+    <ul>
+      <li>Ensembling through stacking improved model performance significantly</li>
+      <li>Community-shared solutions helped boost leaderboard position</li>
+      <li>Some feature engineering attempts can actually degrade accuracy</li>
+      <li>Model pipeline design and modular stacking led to better control</li>
+    </ul>
+
+    <p>
+      I have attached the final files to this GitHub repository. The zip file contains all the models and results that I have used in the competition. I hope my work proves helpful in generating new ideas and methods of approach, and helps in any way possible.
+    </p>
+
+    <p>
+      Huge thanks to the organizers of the Playground Series for creating such a supportive and engaging environment. These competitions provide a fantastic opportunity to learn, experiment, and grow in the field of data science.
+    </p>
+
+    <a class="download-button" href="Fertilizer-Prediction-Final.zip" download>
+      📦 Download Project Files (ZIP)
+    </a>
+  </div>
+</body>
+</html>
